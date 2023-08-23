@@ -10,8 +10,8 @@ const privateKey = "0x00";
 
 web3.eth.accounts.wallet.add(privateKey);
 
-const otherAccount = "0x55a1C53b493F6aa7ea0923A0828d917B9280B75b";
-const caloToken = "0xfA8c6D4dD2BC3250F50bc4933Bf173E73c90f572";
+const otherAccount = "0x..";
+const token = "0x..";
 
 const abi = [
     { inputs: [], stateMutability: "nonpayable", type: "constructor" },
@@ -410,8 +410,8 @@ const abi = [
 ];
 
 async function main() {
-    // console.log(await web3.eth.getTransaction("0xf2700349cf96c5a045ab09f2753efd38aa5ccf0c01d6ae37b47f60c4b135002e"));
-    // console.log(await web3.eth.getTransactionReceipt("0xf2700349cf96c5a045ab09f2753efd38aa5ccf0c01d6ae37b47f60c4b135002e"));
+    // console.log(await web3.eth.getTransaction("0x.."));
+    // console.log(await web3.eth.getTransactionReceipt("0x.."));
 
     // // Send your balance
     // try {
@@ -427,7 +427,7 @@ async function main() {
     // }
 
     // Create contract
-    const contract = new web3.eth.Contract(abi, caloToken) as any;
+    const contract = new web3.eth.Contract(abi, token) as any;
     contract.setProvider;
 
     // Send your token contract
